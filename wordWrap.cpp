@@ -1,5 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
+void printSoln(int p[],int n)
+{
+    int k;
+    if(p[n]==1)
+    {
+        k==1;
+    }
+    else
+    {
+        k=printSoln(p,p[n]-1)+1;
+        cout<<from<<p[n]<<" "<<to<<" "<<n;
+        return k;
+    }
+}
 void Wordwrap(int nums[],int k,int n)
 {
     int cost[n+1][n+1];
@@ -38,7 +52,8 @@ void Wordwrap(int nums[],int k,int n)
             }
         }
     }
-    cout<<c[n];
+    cout<<"TOTAL COST"<<c[n]<<endl;
+    printSoln(p,n);
 }
 int main()
 {
