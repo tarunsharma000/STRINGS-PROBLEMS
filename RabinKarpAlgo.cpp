@@ -27,11 +27,11 @@ void RabinKarp(string text,string pat)
             {
                 if(text[i+j]!=pat[j]) break;
             }
+             if(j==m)
+         {
+           cout<<"Pattern found at Index"<<" "<<i<<endl;
         }
-    if(j==m)
-    {
-        cout<<"Pattern found at Index"<<" "<<i<<endl;
-    }
+        }
     if(i<n-m)
     {
         t=(d*(t-text[i]*h)+text[i+m])%q;
